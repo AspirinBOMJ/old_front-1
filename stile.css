@@ -302,7 +302,7 @@ body._pc .links_sub-li:hover{
 .futer{
 	height: 80px;
 	background-color: #c4c4c4;
-	z-index: 10;
+	z-index: 3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -846,6 +846,10 @@ body._pc .steps__icon:hover{
 	outline: none;
 	transition: 300ms;
 }
+.form__input::placeholder{
+	color: white;
+	opacity: 0;
+}
 .form__input.error{
 	color: rgb(109, 26, 26);
 	border-bottom: 3px rgb(109, 26, 26) solid;
@@ -1205,5 +1209,13 @@ body._pc .yt:hover{
 @media (max-width: 430px){
 	.links__cont{
 		width: 100%;
+	}
+}
+@media (max-width: 550px){
+	.form__lable{
+		display: none;
+	}
+	.form__input::placeholder{
+		opacity: 0.7;
 	}
 }
